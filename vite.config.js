@@ -54,6 +54,6 @@ function htmlPartialsPlugin() {
 }
 
 export default defineConfig({
-  base: '/NEROFLEX/', 
+  base: './', 
   plugins: [htmlPartialsPlugin()],
 });
