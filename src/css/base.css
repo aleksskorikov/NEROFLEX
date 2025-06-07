@@ -1,0 +1,150 @@
+:root {
+  --primary-color: #b982ff;
+  --bg-main-color: #0b0b0f;
+  --section-title-color: #e9eef4;
+  --gray-0-color: #fff;
+  --gray-01-color: #f3f3f6;
+  --gray-02-color: #e3e3e3;
+  --gray-06-color: #767678;
+  --gray-09-color: #1b1b1b;
+  --gray-10-color: #f8f9fa;
+  --gray-30-color: #e9ecef;
+  --gray-40-color: #ced4da;
+  --gray-50-color: #adb5bd;
+  --gray-60-color: #6e7584;
+  --gray-80-color: #495057;
+  --gray-100-color: #212529;
+  --yellow-color: #ffcf0f;
+  --gradient-color: linear-gradient(225deg, #18c8ff 14.89%, #933ffe 85.85%);
+  --gradient-border: linear-gradient(90deg, #df1dff, #48cdff, #3e45ee, #df1dff)
+    border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
+
+  color: var(--gray-0-color);
+  background-color: var(--bg-main-color);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+.wrapper-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 769px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.3;
+  color: var(--section-title-color);
+}
+
+.section-name {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 4px;
+  color: var(--primary-color);
+}
+
+.section-description {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  color: var(--gray-30-color);
+  max-width: 300px;
+}
+
+@media (min-width: 820px) {
+  .section-title {
+    font-size: 50px;
+  }
+    .section-description {
+      font-size: 16px;
+    }
+}
+
+@media (min-width: 1440px) {
+  .section-title {
+    font-size: 50px;
+  }
+}
+
+.gradient-border-card {
+  position: relative;
+  border-radius: 20px;
+  background: linear-gradient(
+    225deg,
+    rgba(41, 46, 75, 0.75) 0%,
+    rgba(41, 46, 75, 0.35) 100%
+  );
+  backdrop-filter: blur(104.8px);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.gradient-border-card::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  border-radius: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+@keyframes gradient-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes sparkle {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.7);
+    opacity: 0.5;
+  }
+}
