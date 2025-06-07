@@ -4,7 +4,7 @@ import path from 'path';
 
 function htmlPartialsPlugin() {
   return {
-    name: 'html-partials',
+    name: '/NEROFLEX/',
     transformIndexHtml(html) {
       const partialsDir = path.resolve(__dirname, 'src/partials');
 
