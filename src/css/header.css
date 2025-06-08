@@ -122,6 +122,9 @@
     top: 110px;
     left: -3%;
   }
+  .header__container::before {
+    right: 3%;
+  }
 }
 
 @media (min-width: 1920px){

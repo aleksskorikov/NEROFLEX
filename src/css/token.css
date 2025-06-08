@@ -85,7 +85,7 @@
 
 @media (min-width: 820px) {
   .token{
-    margin-top: 200px;
+    margin-top: 250px;
   }
 
   .token::before {
@@ -151,14 +151,14 @@
 }
 @media (min-width: 1280px) {
   .token__item {
-    width: 380px;
+    width: 379px;
     padding: 30px 30px 44px 30px;
   }
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1440px) {
   .token__item {
-    width: 380px;
+    width: 375px;
     padding: 30px 30px 44px 30px;
   }
 }

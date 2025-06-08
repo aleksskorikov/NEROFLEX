@@ -24,13 +24,14 @@
 @media only screen and (min-width: 1440px) and (max-width: 1920px) {
   .container {
     max-width: 1440px;
+    padding: 0 130px;
   }
 }
 
 
 @media only screen and (min-width: 1920px) {
   .container {
-    max-width: 1920px;
+    max-width: 1940px;
     padding: 0 250px;
   }
 }

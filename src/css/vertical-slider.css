@@ -110,12 +110,13 @@
   overflow-y: scroll;
   height: 271px;
   min-height: 271px;
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   touch-action: pan-y;
   -webkit-overflow-scrolling: touch;
   padding: 0 0 0 10px;
   align-items: center;
+  -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
   direction: rtl;
 }
@@ -177,7 +178,7 @@
   font-weight: 600;
   line-height: 130%;
   flex-shrink: 0;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   direction: ltr;
 }
 
@@ -199,25 +200,13 @@
   position: relative;
 }
 
-@media (min-width: 820px){
+
+@media (min-width: 820px) {
   .vertical-slider__container {
     margin-top: 216px; 
   }
   .vertical-slider__wrapper{
-    width: 90%;
-  }
-    .vertical-slider__content::before {
-    content: url('/img/star-6.svg');
-    position: absolute;
-    left: 0;
-    bottom: -50px;
-    width: 67px;
-    height: 74px;
-    animation: sparkle 2.5s ease-in-out infinite;
-  }
-}
-@media (min-width: 1280px) {
-  .vertical-slider__wrapper{
+    width: 100%;
     margin-top: 100px;
   }
   .vertical-slider__container::before {
@@ -240,22 +229,22 @@
     justify-content: space-between;
   }
 
-  .vertical-slider__content::before {
+    .vertical-slider__content::before {
     content: url('/img/star-6.svg');
+    position: absolute;
+    left: 0;
+    bottom: -50px;
     width: 67px;
     height: 74px;
-    position: absolute;
-    bottom: -50px;
-    left: 10%;
     animation: sparkle 2.5s ease-in-out infinite;
   }
 
   .vertical-slider__title-active {
-    width: 518px;
+    width: 45%;
     height: 189px;
     text-align: left;
     padding: 0;
-    font-size: 50px;
+    font-size: 38px;
     font-weight: 900;
     background: transparent;
     box-shadow: none;
@@ -266,6 +255,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 25px;
+    width: 80%;
   }
 
   .vertical-slider__slides {
@@ -274,10 +265,10 @@
     height: 394px;
     min-height: 394px;
     padding: 0;
+    width: 55%;
   }
 
   .vertical-slider__slide {
-    width: 559px;
     height: 98px;
     padding: 26px 63px;
     background: radial-gradient(
@@ -300,5 +291,40 @@
   }
 }
 
+@media (min-width: 900px) {
+  .vertical-slider__wrapper {
+    width: 85%;
+  }
+}
+
+@media (min-width: 1020px) {
+  .vertical-slider__wrapper {
+    width: 93%;
+  }
+}
+
+@media (min-width: 1280px){
+    .vertical-slider__content::before {
+    content: url('/img/star-6.svg');
+    width: 67px;
+    height: 74px;
+    position: absolute;
+    bottom: -50px;
+    left: 10%;
+    animation: sparkle 2.5s ease-in-out infinite;
+  }
+  .vertical-slider__wrapper {
+    width: 95%;
+  }
+  .vertical-slider__title-active {
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 1440px){
+  .vertical-slider__title-active {
+    font-size: 50px;
+  }
+}
 
 
