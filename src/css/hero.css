@@ -271,14 +271,13 @@
   line-height: 118%;
   color: #4de1ff;
   position: relative;
-
-  & span {
+}
+.hero__title span {
     color: var(--gray-0-color);
   }
-}
 
 .hero__title::after {
-  content: url('/img/star-8.svg');
+  content: url(/img/star-8.svg);
   position: absolute;
   top: -80px;
   right: 74px;
@@ -388,7 +387,7 @@
   }
 
   .hero__title::after {
-    content: url('/img/star-8.svg');
+    content: url(/img/star-8.svg);
     position: absolute;
     top: 325px;
     right: 868px;

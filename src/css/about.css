@@ -11,7 +11,7 @@
   height: 666px;
   padding: 60px 18px;
   border-radius: 50px;
-  background-image: url(../../public/img/about/aboutBgMini.png);
+  background-image: url(/img/about/aboutBgMini.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -121,7 +121,7 @@
       justify-content: space-between;
       height: auto;
       padding: 0 29px 54px 60px;
-      background-image: url(../../public/img/about/abautBg.png);
+      background-image: url(/img/about/abautBg.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover

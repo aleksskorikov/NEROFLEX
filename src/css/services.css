@@ -22,7 +22,7 @@
   border-radius: 23px;
   backdrop-filter: blur(50px);
   border: 2px solid rgba(233, 236, 239, 0.15);
-  background-image: url(../../public/img/servis/itmBgOdd.png);
+  background-image: url(/img/servis/itmBgOdd.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -30,7 +30,7 @@
 
 
 .services__item:nth-child(even){
-    background-image: url(../../public/img/servis/itemBgEven.png);
+    background-image: url(/img/servis/itemBgEven.png);
   }
 
 .services__item-icon {

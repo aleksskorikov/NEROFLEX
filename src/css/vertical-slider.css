@@ -48,7 +48,7 @@
 }
 
 .vertical-slider__content::before {
-  content: url('/img/star-6.svg');
+  content: url(/img/star-6.svg);
   position: absolute;
   left: -30px;
   bottom: 100px;
@@ -230,7 +230,7 @@
   }
 
     .vertical-slider__content::before {
-    content: url('/img/star-6.svg');
+    content: url(/img/star-6.svg);
     position: absolute;
     left: 0;
     bottom: -50px;

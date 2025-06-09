@@ -59,7 +59,7 @@
   gap: 16px;
   padding: 8px 19px;
   border-radius: 20px;
-  background-image: url(../../public/img/token/cardBg.png);
+  background-image: url(/img/token/cardBg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -127,7 +127,7 @@
   }
 
   .token__item:nth-child(2) {
-    background-image: url(../../public//img/token/Rectangle.png);
+    background-image: url(/img/token/Rectangle.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

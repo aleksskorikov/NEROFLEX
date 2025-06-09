@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const prevButton = document.querySelector('.team__slide-prev-button');
   const nextButton = document.querySelector('.team__slide-next-button');
   const dots = document.querySelectorAll('.team__slide-nav-dot');
-
   const profileImage = document.getElementById('profile-image');
   const profileTitle = document.getElementById('profile-title');
   const profileName = document.getElementById('profile-name');

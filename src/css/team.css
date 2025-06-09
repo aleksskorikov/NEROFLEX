@@ -135,7 +135,7 @@
   justify-content: center;
   align-items: center;
   gap: 3px;
-  background-image: url(../img/glass.svg);
+  background-image: url(/img/glass.svg);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;

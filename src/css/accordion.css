@@ -174,7 +174,7 @@
   }
 
   .accordion__desktop::before {
-    content: url(../img/star-6.svg);
+    content: url(/img/star-6.svg);
     position: absolute;
     top: 10px;
     left: 25px;
@@ -184,7 +184,7 @@
   }
 
   .accordion__desktop::after {
-    content: url(../img/star-8.svg);
+    content: url(/img/star-8.svg);
     position: absolute;
     bottom: 59px;
     right: 53px;
